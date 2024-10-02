@@ -1,0 +1,1298 @@
+2024-09-09 11:25:20.528  INFO 128308 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 128308 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 11:25:20.529  INFO 128308 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 11:25:20.587  INFO 128308 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e70bd39: startup date [Mon Sep 09 11:25:20 IST 2024]; root of context hierarchy
+2024-09-09 11:25:21.265 ERROR 128308 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @49049a04
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 11:25:21.270  INFO 128308 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e70bd39: startup date [Mon Sep 09 11:25:20 IST 2024]; root of context hierarchy
+2024-09-09 11:25:21.272  WARN 128308 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e70bd39: startup date [Mon Sep 09 11:25:20 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 11:25:21.272 ERROR 128308 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e70bd39: startup date [Mon Sep 09 11:25:20 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 11:57:24.113  INFO 171916 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 171916 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 11:57:24.115  INFO 171916 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 11:57:24.160  INFO 171916 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f4854d6: startup date [Mon Sep 09 11:57:24 IST 2024]; root of context hierarchy
+2024-09-09 11:57:24.753 ERROR 171916 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @49049a04
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 11:57:24.757  INFO 171916 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f4854d6: startup date [Mon Sep 09 11:57:24 IST 2024]; root of context hierarchy
+2024-09-09 11:57:24.758  WARN 171916 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f4854d6: startup date [Mon Sep 09 11:57:24 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 11:57:24.759 ERROR 171916 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f4854d6: startup date [Mon Sep 09 11:57:24 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:10:23.314  INFO 202892 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 202892 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:10:23.316  INFO 202892 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:10:23.366  INFO 202892 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f4854d6: startup date [Mon Sep 09 12:10:23 IST 2024]; root of context hierarchy
+2024-09-09 12:10:24.102 ERROR 202892 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @49049a04
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:10:24.107  INFO 202892 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f4854d6: startup date [Mon Sep 09 12:10:23 IST 2024]; root of context hierarchy
+2024-09-09 12:10:24.108  WARN 202892 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f4854d6: startup date [Mon Sep 09 12:10:23 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:10:24.110 ERROR 202892 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f4854d6: startup date [Mon Sep 09 12:10:23 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:22:00.214  INFO 205936 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 205936 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:22:00.216  INFO 205936 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:22:00.269  INFO 205936 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@503d56b5: startup date [Mon Sep 09 12:22:00 IST 2024]; root of context hierarchy
+2024-09-09 12:22:01.041 ERROR 205936 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @7770f470
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:22:01.054  INFO 205936 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@503d56b5: startup date [Mon Sep 09 12:22:00 IST 2024]; root of context hierarchy
+2024-09-09 12:22:01.058  WARN 205936 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@503d56b5: startup date [Mon Sep 09 12:22:00 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:22:01.059 ERROR 205936 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@503d56b5: startup date [Mon Sep 09 12:22:00 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:28:02.478  INFO 232644 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 232644 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:28:02.479  INFO 232644 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:28:02.526  INFO 232644 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60d84f61: startup date [Mon Sep 09 12:28:02 IST 2024]; root of context hierarchy
+2024-09-09 12:28:03.189 ERROR 232644 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @7770f470
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:28:03.199  INFO 232644 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60d84f61: startup date [Mon Sep 09 12:28:02 IST 2024]; root of context hierarchy
+2024-09-09 12:28:03.201  WARN 232644 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60d84f61: startup date [Mon Sep 09 12:28:02 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:28:03.202 ERROR 232644 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60d84f61: startup date [Mon Sep 09 12:28:02 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:28:58.390  INFO 244424 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 244424 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:28:58.391  INFO 244424 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:28:58.437  INFO 244424 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39c11e6c: startup date [Mon Sep 09 12:28:58 IST 2024]; root of context hierarchy
+2024-09-09 12:28:59.095 ERROR 244424 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @7770f470
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:28:59.106  INFO 244424 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39c11e6c: startup date [Mon Sep 09 12:28:58 IST 2024]; root of context hierarchy
+2024-09-09 12:28:59.108  WARN 244424 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39c11e6c: startup date [Mon Sep 09 12:28:58 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:28:59.109 ERROR 244424 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39c11e6c: startup date [Mon Sep 09 12:28:58 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:29:39.864  INFO 240924 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 240924 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:29:39.869  INFO 240924 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:29:39.910  INFO 240924 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e70bd39: startup date [Mon Sep 09 12:29:39 IST 2024]; root of context hierarchy
+2024-09-09 12:29:40.526 ERROR 240924 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @49049a04
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:29:40.531  INFO 240924 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e70bd39: startup date [Mon Sep 09 12:29:39 IST 2024]; root of context hierarchy
+2024-09-09 12:29:40.532  WARN 240924 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e70bd39: startup date [Mon Sep 09 12:29:39 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:29:40.533 ERROR 240924 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e70bd39: startup date [Mon Sep 09 12:29:39 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:35:25.192  INFO 243792 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 243792 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:35:25.194  INFO 243792 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:35:25.237  INFO 243792 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@503d56b5: startup date [Mon Sep 09 12:35:25 IST 2024]; root of context hierarchy
+2024-09-09 12:35:25.919 ERROR 243792 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @7770f470
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:35:25.937  INFO 243792 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@503d56b5: startup date [Mon Sep 09 12:35:25 IST 2024]; root of context hierarchy
+2024-09-09 12:35:25.939  WARN 243792 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@503d56b5: startup date [Mon Sep 09 12:35:25 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:35:25.946 ERROR 243792 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@503d56b5: startup date [Mon Sep 09 12:35:25 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:35:51.725  INFO 28912 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 28912 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:35:51.726  INFO 28912 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:35:51.769  INFO 28912 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61d9efe0: startup date [Mon Sep 09 12:35:51 IST 2024]; root of context hierarchy
+2024-09-09 12:35:52.348 ERROR 28912 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @49049a04
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:35:52.352  INFO 28912 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61d9efe0: startup date [Mon Sep 09 12:35:51 IST 2024]; root of context hierarchy
+2024-09-09 12:35:52.353  WARN 28912 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61d9efe0: startup date [Mon Sep 09 12:35:51 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:35:52.354 ERROR 28912 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61d9efe0: startup date [Mon Sep 09 12:35:51 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:38:01.317  INFO 19608 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 19608 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:38:01.319  INFO 19608 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:38:01.385  INFO 19608 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a1edad4: startup date [Mon Sep 09 12:38:01 IST 2024]; root of context hierarchy
+2024-09-09 12:38:02.356 ERROR 19608 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @d706f19
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:38:02.362  INFO 19608 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a1edad4: startup date [Mon Sep 09 12:38:01 IST 2024]; root of context hierarchy
+2024-09-09 12:38:02.365  WARN 19608 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a1edad4: startup date [Mon Sep 09 12:38:01 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:38:02.367 ERROR 19608 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a1edad4: startup date [Mon Sep 09 12:38:01 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:41:12.838  INFO 31204 --- [main] c.e.m.Application                        : Starting Application on DESKTOP-A408TAH with PID 31204 (C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management\target\classes started by TRIOCLUST-PC in C:\Users\TRIOCLUST-PC\Downloads\EmployeeManagement-master\EmployeeManagement-master\employee-management)
+2024-09-09 12:41:12.840  INFO 31204 --- [main] c.e.m.Application                        : No active profile set, falling back to default profiles: default
+2024-09-09 12:41:12.906  INFO 31204 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a1edad4: startup date [Mon Sep 09 12:41:12 IST 2024]; root of context hierarchy
+2024-09-09 12:41:13.861 ERROR 31204 --- [main] o.s.b.SpringApplication                  : Application startup failed
+
+java.lang.IllegalStateException: Cannot load configuration class: com.employee.management.Application
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:403) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:249) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:281) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:125) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:686) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:524) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.ExceptionInInitializerError
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @d706f19
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[?:?]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[?:?]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199) ~[?:?]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils$1.run(ReflectUtils.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:44) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:329) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:93) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:91) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:116) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:291) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:174) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:153) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73) ~[spring-core-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.newEnhancer(ConfigurationClassEnhancer.java:119) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:107) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:393) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	... 12 more
+
+2024-09-09 12:41:13.869  INFO 31204 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a1edad4: startup date [Mon Sep 09 12:41:12 IST 2024]; root of context hierarchy
+2024-09-09 12:41:13.870  WARN 31204 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a1edad4: startup date [Mon Sep 09 12:41:12 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
+2024-09-09 12:41:13.870 ERROR 31204 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Destroy method on bean with name 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory' threw an exception
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a1edad4: startup date [Mon Sep 09 12:41:12 IST 2024]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:404) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.ApplicationListenerDetector.postProcessBeforeDestruction(ApplicationListenerDetector.java:97) ~[spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:253) ~[spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:961) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:968) [spring-beans-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1033) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961) [spring-context-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:819) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176) [spring-boot-1.4.4.RELEASE.jar:1.4.4.RELEASE]
+	at com.employee.management.Application.main(Application.java:18) [classes/:?]
+
