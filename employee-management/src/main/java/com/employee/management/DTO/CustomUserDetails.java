@@ -1,58 +1,75 @@
 package com.employee.management.DTO;
+
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+/**
+ * CustomUserDetails is a custom implementation of the UserDetails interface
+ * provided by Spring Security. It represents the user details used for authentication.
+ */
 public class CustomUserDetails implements UserDetails {
- private Integer id;
- private String username;
- private String password;
+    private Integer id; // Unique identifier for the user
+    private String username; // Username of the user
+    private String password; // Password of the user
 
- public CustomUserDetails(Integer id,String username, String password) {
-  this.id = id;
-  this.username = username;
-  this.password = password;
- }
+    /**
+     * Constructor to initialize CustomUserDetails with user information.
+     *
+     * @param id       the unique identifier for the user
+     * @param username the username of the user
+     * @param password the password of the user
+     */
+    public CustomUserDetails(Integer id, String username, String password) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
 
- public Integer getId() {
-	 return id;
- }
+    /**
+     * Gets the unique identifier of the user.
+     *
+     * @return the user ID
+     */
+    public Integer getId() {
+        return id;
+    }
 
+    @Override
+    public String getPassword() {
+        return password; // Returns the user's password
+    }
 
-@Override
- public String getPassword() {
-  return password;
- }
+    @Override
+    public String getUsername() {
+        return username; // Returns the user's username
+    }
 
- @Override
- public String getUsername() {
-  return username;
- }
+    @Override
+    public boolean isAccountNonExpired() {
+        return true; // Indicates that the account is not expired
+    }
 
- @Override
- public boolean isAccountNonExpired() {
-  return true;
- }
+    @Override
+    public boolean isAccountNonLocked() {
+        return true; // Indicates that the account is not locked
+    }
 
- @Override
- public boolean isAccountNonLocked() {
-  return true;
- }
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true; // Indicates that the credentials are not expired
+    }
 
- @Override
- public boolean isCredentialsNonExpired() {
-  return true;
- }
+    @Override
+    public boolean isEnabled() {
+        return true; // Indicates that the account is enabled
+    }
 
- @Override
- public boolean isEnabled() {
-  return true;
- }
-
-@Override
-public Collection<? extends GrantedAuthority> getAuthorities() {
-	// TODO Auto-generated method stub
-	return null;
-}
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        // This method should return the authorities granted to the user.
+        // Currently returning null, but it can be implemented to return user roles/permissions.
+        return null;
+    }
 }

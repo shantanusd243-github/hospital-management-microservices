@@ -6,7 +6,6 @@ com\employee\management\service\EmployeeService.class
 com\employee\management\Application.class
 com\employee\management\DTO\CustomUserDetails.class
 com\employee\management\repository\UserRepository.class
-com\employee\management\controller\EmployeeController.class
 com\employee\management\repository\EmployeeRepository.class
 com\employee\management\model\Department.class
 com\employee\management\service\DepartmentService.class
