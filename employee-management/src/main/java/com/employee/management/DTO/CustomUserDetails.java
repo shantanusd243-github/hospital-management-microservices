@@ -13,6 +13,7 @@ public class CustomUserDetails implements UserDetails {
     private Integer id; // Unique identifier for the user
     private String username; // Username of the user
     private String password; // Password of the user
+    Collection<? extends GrantedAuthority> roles; // user roles for authrorities
 
     /**
      * Constructor to initialize CustomUserDetails with user information.
@@ -21,10 +22,11 @@ public class CustomUserDetails implements UserDetails {
      * @param username the username of the user
      * @param password the password of the user
      */
-    public CustomUserDetails(Integer id, String username, String password) {
+    public CustomUserDetails(Integer id, String username, String password,Collection<? extends GrantedAuthority> roles) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.roles=roles;
     }
 
     /**
@@ -68,8 +70,6 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // This method should return the authorities granted to the user.
-        // Currently returning null, but it can be implemented to return user roles/permissions.
-        return null;
+        return roles;
     }
 }

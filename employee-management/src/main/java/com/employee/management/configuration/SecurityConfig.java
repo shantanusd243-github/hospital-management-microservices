@@ -65,6 +65,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(req -> {
                     // Permit all POST requests to the authentication endpoint
                     req.requestMatchers(HttpMethod.POST, "/employee/api/auth/**").permitAll();
+                    
+                    req.requestMatchers("/employee/employees/**").hasRole("USER");
                     // Permit access to Swagger API documentation
                     req.requestMatchers("/v3/api-docs/**").permitAll();
                     req.requestMatchers("/swagger-ui/*").permitAll();

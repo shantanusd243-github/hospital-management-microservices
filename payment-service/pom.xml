@@ -26,6 +26,32 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+			<!-- Zipkin Reporter for Brave -->
+		<dependency>
+		    <groupId>io.zipkin.reporter2</groupId>
+		    <artifactId>zipkin-reporter-brave</artifactId>
+		</dependency>
+		<!-- Micrometer tracing with Brave (which integrates with Zipkin) -->
+		<dependency>
+		    <groupId>io.micrometer</groupId>
+		    <artifactId>micrometer-tracing-bridge-brave</artifactId>
+		</dependency>
+		<!-- to trace feign client requests -->
+		<dependency>
+		    <groupId>io.github.openfeign</groupId>
+		    <artifactId>feign-micrometer</artifactId>
+		    <scope>test</scope>
+		</dependency>
+		<!-- Micrometer Observation (for observation APIs) -->
+		<dependency>
+		    <groupId>io.micrometer</groupId>
+		    <artifactId>micrometer-observation</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
 		<dependency>
 	         <groupId>org.springframework.cloud</groupId>
 	         <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

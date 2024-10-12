@@ -67,9 +67,6 @@ public class ConsultationServiceImpl implements ConsultationService {
 	private FindOneFreeDoctorBySpecialtyUseCase findOneFreeDoctorBySpecialty;
 	
 	@Autowired
-	private EmployeeServiceClient employeeServiceClient;
-	
-	@Autowired
 	private ProductRepository productRepository;
 	
 	@Autowired

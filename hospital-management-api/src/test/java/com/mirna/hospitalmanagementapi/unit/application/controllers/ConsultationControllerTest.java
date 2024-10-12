@@ -55,6 +55,7 @@ public class ConsultationControllerTest {
 	private ObjectMapper mapper;
 	
 	private Long testDoctorId;
+	
 	private Long testPatientId;
 	
 	private Long testConsultationId;

@@ -64,7 +64,7 @@ public class AuthenticationFilter extends OncePerRequestFilter {
         CustomUserDetails user = (CustomUserDetails) userDetailsServiceImpl.loadUserByUsername(userData);
 
         // Create an authentication token for the user
-        Authentication loginToken = new UsernamePasswordAuthenticationToken(user, null, null);
+        Authentication loginToken = new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
 
         // Set the authentication in the SecurityContext
         SecurityContextHolder.getContext().setAuthentication(loginToken);
