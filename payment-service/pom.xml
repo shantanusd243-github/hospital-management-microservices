@@ -97,6 +97,12 @@
 		    <artifactId>jakarta.xml.bind-api</artifactId>
 		    <version>3.0.1</version> <!-- or latest version -->
 		</dependency>
+		  <!-- Resilience4j Circuit Breaker -->
+	    <dependency>
+	        <groupId>io.github.resilience4j</groupId>
+	        <artifactId>resilience4j-spring-boot3</artifactId>
+	        <!-- Use the latest version -->
+	    </dependency>
 	</dependencies>
 
 	<dependencyManagement>

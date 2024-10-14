@@ -56,7 +56,7 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 	@Override
 	protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
 		String url = request.getRequestURI();
-	    return Stream.of(excluded_urls).anyMatch(x -> url.startsWith(x));
+	    return Stream.of(excluded_urls).anyMatch(x -> url.contains(x));
 	 }
 	
 	private static final String[] excluded_urls = {

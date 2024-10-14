@@ -36,7 +36,9 @@ public class PaymentController {
 
     @PostMapping("/create_order")
     public String createOrder(@RequestBody Map<String, Object> data) throws RazorpayException {
-    	double amountDb = Double.parseDouble(data.get("amount").toString());
+    	
+    	throw new RazorpayException("Hardcoded exception thrown");
+    	/*double amountDb = Double.parseDouble(data.get("amount").toString());
         
         // Convert the double to an integer (cast or round)
         int amount = (int) amountDb; 
@@ -49,7 +51,7 @@ public class PaymentController {
 
         Order order = razorpayClient.orders.create(ob);
         System.out.println(order);
-        return order.toString();
+        return order.toString();*/
     }
     
     @PostMapping("/mockPayment")

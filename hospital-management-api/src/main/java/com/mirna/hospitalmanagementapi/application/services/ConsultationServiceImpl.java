@@ -32,7 +32,9 @@ import com.mirna.hospitalmanagementapi.domain.exceptions.ConsultationValidationE
 import com.mirna.hospitalmanagementapi.domain.repositories.ProductRepository;
 import com.mirna.hospitalmanagementapi.domain.services.ConsultationService;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import jakarta.persistence.EntityNotFoundException;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * This class is an implementation of the ConsultationService interface.
@@ -42,6 +44,7 @@ import jakarta.persistence.EntityNotFoundException;
  * @author Mirna Gama
  * @version 1.0
  */
+@Slf4j
 @Service
 public class ConsultationServiceImpl implements ConsultationService {
 
@@ -79,6 +82,7 @@ public class ConsultationServiceImpl implements ConsultationService {
 	* @return The saved consultation if successful,  or throws an exception if there is an error.
 	 * @throws ConsultationValidationException if there is a validation error
 	*/
+	
 	@Override
 	public Consultation addConsultation(ConsultationDTO consultationDTO) throws ConsultationValidationException {
 
@@ -121,35 +125,45 @@ public class ConsultationServiceImpl implements ConsultationService {
 			
 			consultation = new Consultation(patient, doctor, consultationDTO.consultationDate(),product);
 			consultation =  saveConsultation.execute(consultation);
+			this.createPaymentData(product,patient);
 			
-			Map<String, Object> data = new HashMap<>();
-			data.put("amount", product.getPrice());
-			
-			String razorPayData = paymentServiceClient.createOrder(data);
-			
-			System.out.println(razorPayData);
-			
-			JSONObject jsonObj = new JSONObject(razorPayData);
-		
-			data.put("order_id",jsonObj.getString("id"));
-			
-			Object payment = paymentServiceClient.captureMockedPayment(data);
-			
-			PaymentDTO paymentDTO = new PaymentDTO();
-			paymentDTO.setAmount(product.getPrice());
-			paymentDTO.setEmailId(patient.getEmail());
-			paymentDTO.setMobileNumber(patient.getTelephone());
-			paymentDTO.setOrderId(jsonObj.getString("id"));
-			paymentDTO.setRazorpayOrderId(jsonObj.getString("id"));
-			paymentDTO.setRazorpayPaymentId("pay"+jsonObj.getString("id"));
-			paymentDTO.setStatus("Paid");
-			paymentServiceClient.createPayment(paymentDTO);
 		}
 		else {
 			throw new ConsultationValidationException("Product selected is not valid");
 		}
 
 		return consultation;
+	}
+	
+	@CircuitBreaker(name = "hospitalManagement", fallbackMethod = "fallBackForConsultationPaymentService")
+	public void createPaymentData(Product product, Patient patient) {
+		Map<String, Object> data = new HashMap<>();
+		data.put("amount", product.getPrice());
+		
+		String razorPayData = paymentServiceClient.createOrder(data);
+		
+		System.out.println(razorPayData);
+		
+		JSONObject jsonObj = new JSONObject(razorPayData);
+	
+		data.put("order_id",jsonObj.getString("id"));
+		
+		Object payment = paymentServiceClient.captureMockedPayment(data);
+		System.out.println("payment :- "+payment.toString());
+		PaymentDTO paymentDTO = new PaymentDTO();
+		paymentDTO.setAmount(product.getPrice());
+		paymentDTO.setEmailId(patient.getEmail());
+		paymentDTO.setMobileNumber(patient.getTelephone());
+		paymentDTO.setOrderId(jsonObj.getString("id"));
+		paymentDTO.setRazorpayOrderId(jsonObj.getString("id"));
+		paymentDTO.setRazorpayPaymentId("pay"+jsonObj.getString("id"));
+		paymentDTO.setStatus("Paid");
+		paymentServiceClient.createPayment(paymentDTO);
+	}
+	
+	//Fallback method
+	public String fallBackForConsultationPaymentService(Product product, Patient patient,Throwable throwable) {
+		return "Fallback response: payment service not available right now.";
 	}
 
 	/**
